@@ -35,7 +35,8 @@ public class NovaClient implements ClientModInitializer {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             MODULES.tick(client);
             while (guiKey.consumeClick()) {
-                Minecraft.getInstance().setScreen(new ClickGuiScreen());
+         net.minecraft.client.Minecraft.getInstance().setScreen(new ClickGuiScreen());
+            
             }
         });
     }
