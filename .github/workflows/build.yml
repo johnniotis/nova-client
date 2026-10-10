@@ -1,4 +1,4 @@
-name: Build Minecraft Mod
+ name: Build Minecraft Mod
 on: [push, pull_request]
 jobs:
   build:
@@ -19,4 +19,3 @@ jobs:
         with:
           name: novaclient-jar
           path: build/libs/*.jar
-          
